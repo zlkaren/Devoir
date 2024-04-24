@@ -116,21 +116,34 @@ verification: apache2 -v
 	3-PHP:
 
 ~$sudo su
+
 ~# php_source
+
 ~#cd php_source
 	telechargement d’un code source php
-	Etape 1:
+
+ Etape 1:
 ~/php_source#gunzip /home/mit/php-8.3.6.tar.zip
+
 ~/php_source#tar -xvf /home/mit/php-8.3.6.tar
+
 ~/php_source# cd php-8.3.6
+
 ~/php_sources/php-8.3.6#more README.md
-	Etape 2: installation php en suivant les instructions données par README.md
-~/php_xources/php-8.3.6# apt install -y pkg-conf build-essential autoconf bison re2c \ libxm12-dev libsqlete3-dev
+
+ 	Etape 2: installation php en suivant les instructions données par README.md
+~/php_sources/php-8.3.6# apt install -y pkg-conf build-essential autoconf bison re2c \ libxm12-dev libsqlete3-dev
+
 ~/php_sources/php-8.3.6# ./buildconf
+
 ~/php_sources/php-8.3.6# ./configure
+
 ~/php_sources/php-8.3.6#  make 
+
 sans erreur
+
 ~/php_sources/php-8.3.6#  make installer
+
 verification:php --version
 
 
