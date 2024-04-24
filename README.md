@@ -95,19 +95,27 @@ apr-util:
 ~/cd/usr/local/src/httpd #cd apr-util_version
 
 ~/cd/usr/local/src/httpd/apr-util_version# ./configure
-	Eroor : ./configure not found
+	
+ 	Eroor : ./configure not found
 ~/cd/usr/local/src/httpd/apr-util_version# ./configure –with-apr=/usr/local/apr/bin/apr-1-config
 
 ~/cd/usr/local/src/httpd/apr-util_version #make && make install
-	prce :
+	
+ prce :
 	Decompression et desarchivage;
 ~/cd/usr/local/src/httpd#cd prce_version
+
 ~/cd/usr/local/src/httpd/cd prce_version# ./configure
+
        fatal-error:expart.h:no such file
+
 ~/cd/usr/local/src/httpd/cd prce_version#apt install libexpat1.dev
+
 ~/cd/usr/local/src/httpd/cd prce_version# ./configure
+
 ~/cd/usr/local/src/httpd/cd prce_version# make && make install
-	Etape 2: Installation apache2
+
+ Etape 2: Installation apache2
 
 ~/cd/usr/local/src/httpd_version$#./configure –prefix=/usr/local/apache2 –with-prce=/usr/local/bin –enable-so
 ~/cd/usr/local/src/httpd_version# make && make install
@@ -131,7 +139,9 @@ verification: apache2 -v
 
 ~/php_sources/php-8.3.6#more README.md
 
- 	Etape 2: installation php en suivant les instructions données par README.md
+ 	
+  	Etape 2: installation php en suivant les instructions données par README.md
+
 ~/php_sources/php-8.3.6# apt install -y pkg-conf build-essential autoconf bison re2c \ libxm12-dev libsqlete3-dev
 
 ~/php_sources/php-8.3.6# ./buildconf
