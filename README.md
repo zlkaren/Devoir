@@ -1,60 +1,99 @@
-Installation Mysql,apache2,PHP
+	Installation Mysql,apache2,PHP
 
 1-MySQL:
 ~$ sudo su      
+
 ~# cd /usr/local/etc
+
 Telechargement d’un code source mysql
+
 Etap 1:Decompression et desarchivage:
+
 ~/cd/usr/local/src # bunzip2 /home/user/mysql-8.0.36
+
 ~/cd/usr/local/src # tar -xvf /home/user/mysql-8.0.36
+
 ~/cd/usr/local/src # cd mysql-8.0.36
+
 Etape 2:Installation :dependance boost-1-77-0
+
 Telechargement d’un code source boost
-	Decompression et desarchivage:
+	
+ 	Decompression et desarchivage:
+
 ~/cd/usr/local/src/ #bunzip2 /home/user/boost-1-77-0.tar.bz2
+
 ~/cd/usr/local/src/mysql-8.0.36 $ tar -xvf /home/user/boost-1-77-0 .tar
 
 ~/cd/usr/local/src/mysql-8.0.36 # cd boost-1-77-0
+
 ~/cd/usr/local/src/mysql-8.0.36 /boost-1-77-0#ls -a
+
 ~/cd/usr/local/src/mysql-8.0.36/boost-1-77-0# README
+
 ~/cd/usr/local/src/mysql-8.0.36/boost-1-77-0# ./bootstrap.sh
+
 ~/cd/usr/local/src/mysql-8.0.36# ./b2
+
 ~/cd/usr/local/src/ mysql-8.0.36 # ./b2 install
+
 Etape 3:installation mysql 
+
 ~/cd/usr/local/src/mysql-8.0.36/ boost-1-77-0 #mkdir build
+
 ~/cd/usr/local/src/mysql-8.0.36/boost-1-77-0# cd build
+
 ~/cd/usr/local/src/mysql-8.0.36/boost-1-77-0/build# cmake
+  
    no error
+
 ~/cd/usr/local/src/ mysql-8.0.36/boost-1-77-0/build# make
+
 ~/cd/usr/local/src/mysql-8.0.36/boost-1-77-0/build# make install
+
 verification : mysql --version 
 
 
 
 2-Apache2:
+
 ~$ sudo su      
+
 ~# cd /usr/local/src
-	Decompression et desarchivage:
+	
+ 	Decompression et desarchivage:
+
 ~/cd/usr/local/src # bunzip2 /home/mit/httpd_version.tar.bz2
+
 ~/cd/usr/local/src # tar -xvf /home/mit/httpd_version.tar
 
 Etape1:Installation des dependances :
+
 apr:
 	Decompression et desarchivage :
+
 ~/cd/usr/local/src #cd httpd_version
+
 ~/cd/usr/local/src/httpd #gunzip2 /home/mit/apr_version.tar.gz
+
 ~/cd/usr/local/src/httpd # tar -xvf /home/mit/apr_version.tar
 
 ~/cd/usr/local/src/httpd #cd apr_version
+
 ~/cd/usr/local/src/httpd/apr_version #./configure
+
 ~/cd/usr/local/src/httpd/apr_version r#make
+
 ~/cd/usr/local/src/httpd/apr_version# make install
 
 ~/cd/usr/local/src/httpd/apr_version #cd ..
+
 apr-util:
-	Decompression et desarchivage;
+
+ 	Decompression et desarchivage;
 
 ~/cd/usr/local/src/httpd #cd apr-util_version
+
 ~/cd/usr/local/src/httpd/apr-util_version# ./configure
 	Eroor : ./configure not found
 ~/cd/usr/local/src/httpd/apr-util_version# ./configure –with-apr=/usr/local/apr/bin/apr-1-config
