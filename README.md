@@ -1,6 +1,6 @@
 	Installation Mysql,apache2,PHP
 
-1-MySQL:
+        1-MySQL:
 ~$ sudo su      
 
 ~# cd /usr/local/etc
