@@ -1,9 +1,9 @@
 Installation Mysql,apache2,PHP
 
         1-MySQL:
-     ~$ sudo su      
+      ~$ sudo su      
 
-     ~# cd /usr/local/etc
+      ~# cd /usr/local/etc
 Telechargement d’un code source mysql
 
 Etap 1:Decompression et desarchivage:
@@ -71,21 +71,21 @@ Etape1:Installation des dependances :
 apr:
 	Decompression et desarchivage :
 
-  ~/cd/usr/local/src #cd httpd_version
+      ~/cd/usr/local/src #cd httpd_version
 
-  ~/cd/usr/local/src/httpd #gunzip2 /home/mit/apr_version.tar.gz
+      ~/cd/usr/local/src/httpd #gunzip2 /home/mit/apr_version.tar.gz
 
-  ~/cd/usr/local/src/httpd # tar -xvf /home/mit/apr_version.tar
+      ~/cd/usr/local/src/httpd # tar -xvf /home/mit/apr_version.tar
 
-  ~/cd/usr/local/src/httpd #cd apr_version
+      ~/cd/usr/local/src/httpd #cd apr_version
 
-  ~/cd/usr/local/src/httpd/apr_version #./configure
+      ~/cd/usr/local/src/httpd/apr_version #./configure
 
-  ~/cd/usr/local/src/httpd/apr_version r#make
+      ~/cd/usr/local/src/httpd/apr_version r#make
 
-  ~/cd/usr/local/src/httpd/apr_version# make install
+      ~/cd/usr/local/src/httpd/apr_version# make install
 
-  ~/cd/usr/local/src/httpd/apr_version #cd ..
+      ~/cd/usr/local/src/httpd/apr_version #cd ..
 
 apr-util:
 
