@@ -121,7 +121,10 @@ apr-util:
 ~/cd/usr/local/src/httpd_version# make && make install
 verification: apache2 -v
 
-	3-PHP:
+	
+ 
+ 
+         3-PHP:
 
 ~$sudo su
 
