@@ -62,16 +62,16 @@ verification : mysql --version
 	
  	Decompression et desarchivage:
 
-   ~/cd/usr/local/src # bunzip2 /home/mit/httpd_version.tar.bz2
+        ~/cd/usr/local/src # bunzip2 /home/mit/httpd_version.tar.bz2
 
-   ~/cd/usr/local/src # tar -xvf /home/mit/httpd_version.tar
+        ~/cd/usr/local/src # tar -xvf /home/mit/httpd_version.tar
 
 Etape1:Installation des dependances :
 
 apr:
 	Decompression et desarchivage :
 
-      ~/cd/usr/local/src #cd httpd_version
+       ~/cd/usr/local/src #cd httpd_version
 
       ~/cd/usr/local/src/httpd #gunzip2 /home/mit/apr_version.tar.gz
 
@@ -91,28 +91,28 @@ apr-util:
 
  	Decompression et desarchivage;
 
-   ~/cd/usr/local/src/httpd #cd apr-util_version
+      ~/cd/usr/local/src/httpd #cd apr-util_version
 
-   ~/cd/usr/local/src/httpd/apr-util_version# ./configure
+      ~/cd/usr/local/src/httpd/apr-util_version# ./configure
 	
  	Eroor : ./configure not found
-   ~/cd/usr/local/src/httpd/apr-util_version# ./configure –with-apr=/usr/local/apr/bin/apr-1-config
+     ~/cd/usr/local/src/httpd/apr-util_version# ./configure –with-apr=/usr/local/apr/bin/apr-1-config
 
-   ~/cd/usr/local/src/httpd/apr-util_version #make && make install
+     ~/cd/usr/local/src/httpd/apr-util_version #make && make install
 	
  prce :
 	Decompression et desarchivage;
-    ~/cd/usr/local/src/httpd#cd prce_version
+       ~/cd/usr/local/src/httpd#cd prce_version
 
-    ~/cd/usr/local/src/httpd/cd prce_version# ./configure
+       ~/cd/usr/local/src/httpd/cd prce_version# ./configure
 
        fatal-error:expart.h:no such file
 
-    ~/cd/usr/local/src/httpd/cd prce_version#apt install libexpat1.dev
+      ~/cd/usr/local/src/httpd/cd prce_version#apt install libexpat1.dev
 
-    ~/cd/usr/local/src/httpd/cd prce_version# ./configure
+      ~/cd/usr/local/src/httpd/cd prce_version# ./configure
 
-    ~/cd/usr/local/src/httpd/cd prce_version# make && make install
+      ~/cd/usr/local/src/httpd/cd prce_version# make && make install
 
  Etape 2: Installation apache2
 
