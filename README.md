@@ -1,4 +1,4 @@
-Installation Mysql,apache2,PHP
+ Installation Mysql,apache2,PHP
 
         1-MySQL:
       ~$ sudo su      
